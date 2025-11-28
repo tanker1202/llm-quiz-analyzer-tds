@@ -97,7 +97,7 @@ class LLMHandler:
             logger.info("Sending request to OpenAI API...")
             
             response = await self.client.post(
-                "https://api.openai.com/v1/chat/completions",
+                "https://aipipe.org/openai/v1/chat/completions",
                 headers={
                     "Authorization": f"Bearer {self.config.OPENAI_API_KEY}",
                     "Content-Type": "application/json"
